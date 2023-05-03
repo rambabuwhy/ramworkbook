@@ -65,3 +65,86 @@ Space Complexity:
 * Therefore, the space complexity of the program is O(n1 + n2).
 
 Overall, the program has a time complexity of O(n1 + n2 + m1 + m2) and a space complexity of O(n1 + n2), where n1 and n2 are the sizes of `nums1` and `nums2`, respectively, and m1 and m2 are the sizes of the resulting vectors containing the missing numbers.
+
+we can improve the space complexity of the program by avoiding the creation of the two unordered sets `set1` and `set2`. Instead, we can directly insert the elements of `nums1` and `nums2` into the `onlyIn1` and `onlyIn2` sets while checking for their presence in the other array.
+
+Here's the modified implementation:
+
+```cpp
+#include <vector>
+#include <unordered_set>
+
+std::vector<std::vector<int>> findMissingNumbers(std::vector<int>& nums1, std::vector<int>& nums2) {
+    std::unordered_set<int> onlyIn1;
+    std::unordered_set<int> onlyIn2;
+
+    // Iterate through nums1 and check if each integer is also in nums2
+    // If not, add it to onlyIn1
+    for (auto num : nums1) {
+        if (std::find(nums2.begin(), nums2.end(), num) == nums2.end()) {
+            onlyIn1.insert(num);
+        }
+    }
+
+    // Iterate through nums2 and check if each integer is also in nums1
+    // If not, add it to onlyIn2
+    for (auto num : nums2) {
+        if (std::find(nums1.begin(), nums1.end(), num) == nums1.end()) {
+            onlyIn2.insert(num);
+        }
+    }
+
+    // Create a vector of vectors to store the answer
+    std::vector<std::vector<int>> answer(2);
+
+    // Convert the unordered sets onlyIn1 and onlyIn2 to vectors and store them in answer
+    answer[0].insert(answer[0].end(), onlyIn1.begin(), onlyIn1.end());
+    answer[1].insert(answer[1].end(), onlyIn2.begin(), onlyIn2.end());
+
+    // Return the answer
+    return answer;
+}
+
+```
+
+In this implementation, we directly iterate through `nums1` and `nums2` and insert elements into the `onlyIn1` and `onlyIn2` sets while checking for their presence in the other array using `std::find()`. This eliminates the need for the two unordered sets `set1` and `set2`.
+
+
+
+we can further improve the time complexity of the program by using unordered sets to store the elements of `nums1` and `nums2` and performing lookups in constant time. Here's the modified implementation:
+
+```cpp
+#include <vector>
+#include <unordered_set>
+
+std::vector<std::vector<int>> findMissingNumbers(std::vector<int>& nums1, std::vector<int>& nums2) {
+    std::unordered_set<int> set1(nums1.begin(), nums1.end());
+    std::unordered_set<int> set2(nums2.begin(), nums2.end());
+
+    // Create a vector of vectors to store the answer
+    std::vector<std::vector<int>> answer(2);
+
+    // Iterate through set1 and check if each integer is also in set2
+    // If not, add it to answer[0]
+    for (auto num : set1) {
+        if (set2.find(num) == set2.end()) {
+            answer[0].push_back(num);
+        }
+    }
+
+    // Iterate through set2 and check if each integer is also in set1
+    // If not, add it to answer[1]
+    for (auto num : set2) {
+        if (set1.find(num) == set1.end()) {
+            answer[1].push_back(num);
+        }
+    }
+
+    // Return the answer
+    return answer;
+}
+
+```
+
+In this implementation, we create two unordered sets `set1` and `set2` to store the elements of `nums1` and `nums2`, respectively. We then iterate through `set1` and `set2` and use `set1.find()` and `set2.find()` to perform constant-time lookups. This eliminates the need for the two loops that iterate through `nums1` and `nums2` and the `std::find()` operation.
+
