@@ -2,7 +2,7 @@
 
 1. Reading input from standard input:
 
-Useful for reading input data from a file or writing output data to a file in competitive programming problems.
+This is useful for getting input values from the user during runtime.
 
 {% code lineNumbers="true" %}
 ```cpp
@@ -19,6 +19,8 @@ int main() {
 {% endcode %}
 
 2. Reading input from a file:
+
+Useful for reading input data from a file or writing output data to a file in competitive programming problems.
 
 {% code lineNumbers="true" %}
 ```cpp
@@ -57,6 +59,8 @@ int main() {
 
 4. Writing output to a file:
 
+Useful for reading input data from a file or writing output data to a file in competitive programming problems.
+
 {% code lineNumbers="true" %}
 ```cpp
 using namespace std;
@@ -73,6 +77,8 @@ int main() {
 {% endcode %}
 
 5. Looping through an array:
+
+This is a fundamental programming construct that allows you to repeat a set of instructions multiple times. The most common types of loops in C++ are the `for` loop, the `while` loop, and the `do-while` loop. The `for` loop is useful for looping a specific number of times, while the `while` loop and `do-while` loop are useful for looping until a certain condition is met.
 
 {% code lineNumbers="true" %}
 ```cpp
