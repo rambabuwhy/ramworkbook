@@ -1,10 +1,6 @@
----
-description: Determine the sign of the product of all elements in an integer array
----
-
 # Determine the sign
 
-To determine the sign of the product of all elements in an integer array. Specifically, given an array of integers `nums`, the function `arraySign` returns:
+Determine the sign of the product of all elements in an integer array. To determine the sign of the product of all elements in an integer array. Specifically, given an array of integers `nums`, the function `arraySign` returns:
 
 * 1 if the product of all elements in `nums` is positive.
 * \-1 if the product of all elements in `nums` is negative.

@@ -1,4 +1,4 @@
-# snippets
+# Snippets
 
 1. Reading input from standard input:
 
