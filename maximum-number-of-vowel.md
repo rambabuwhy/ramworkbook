@@ -16,15 +16,15 @@ If there are multiple substrings with the same maximum number of vowels, return 
 {% code lineNumbers="true" %}
 ```cpp
 int maxVowels(string s, int k) {
-    int maxVowelCount = 0;  // initialize the maximum vowel count to be 0
-    int vowelCount = 0;     // initialize the vowel count to be 0
+    int maxVowelCount = 0;  
+    int vowelCount = 0;     
     for (int i = 0; i < k; i++) {
         // count the number of vowels in the first k characters
         if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
             vowelCount++;
         }
     }
-    maxVowelCount = vowelCount;  // update the maximum vowel count with the count of the first k characters
+    maxVowelCount = vowelCount;  
     for (int i = k; i < s.length(); i++) {
         // slide the window of size k one character to the right and count the number of vowels in the new substring
         if (s[i - k] == 'a' || s[i - k] == 'e' || s[i - k] == 'i' || s[i - k] == 'o' || s[i - k] == 'u') {
@@ -33,7 +33,7 @@ int maxVowels(string s, int k) {
         if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
             vowelCount++;
         }
-        maxVowelCount = max(maxVowelCount, vowelCount);  // update the maximum vowel count if the current count is higher
+        maxVowelCount = max(maxVowelCount, vowelCount);  
     }
     return maxVowelCount;  // return the maximum vowel count
 }
