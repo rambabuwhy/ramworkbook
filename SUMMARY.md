@@ -10,3 +10,4 @@
 * [Number of Subsequences that satisfy the given sum](number-of-subsequences-that-satisfy-the-given-sum.md)
 * [Missing number finder](missing-number-finder.md)
 * [Longest valid obstacle course at each position](longest-valid-obstacle-course-at-each-position.md)
+* [Matrix Diagonal Sum](matrix-diagonal-sum.md)
