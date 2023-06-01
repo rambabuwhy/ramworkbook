@@ -12,3 +12,4 @@
 * [Longest valid obstacle course at each position](longest-valid-obstacle-course-at-each-position.md)
 * [Matrix Diagonal Sum](matrix-diagonal-sum.md)
 * [Matrix in spiral order](matrix-in-spiral-order.md)
+* [Shortest Clear Path in a Binary Matrix](shortest-clear-path-in-a-binary-matrix.md)
