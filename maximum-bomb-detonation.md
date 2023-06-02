@@ -15,15 +15,15 @@ Input: bombs = [[2,1,3],[6,1,4]]
 Output: 2
 ```
 
-Here's a more detailed explanation of the code logic:
 
-1. The `dfs` function performs a depth-first search (DFS) to count the number of bombs that can be detonated starting from a given bomb. It uses recursion and a boolean array to keep track of the detonation status of each bomb.
-2. The `maximumDetonation` function calculates the maximum number of bombs that can be detonated. It creates an adjacency list to represent the connections between bombs and then performs DFS for each bomb, finding the maximum count of detonated bombs.
-3. The code iterates through each bomb and checks the range of each bomb by calculating the squared distance between bombs. It builds the adjacency list by adding adjacent bombs that can be detonated.
-4. Finally, the code performs DFS for each bomb, keeping track of the maximum number of detonated bombs found.
-5. The function returns the maximum number of bombs that can be detonated.
 
 By using DFS and an adjacency list, the code effectively explores the connections between bombs to determine the maximum number of bombs that can be detonated.
+
+Building the adjacency list:
+
+* The code iterates through each bomb using the index `i`.
+* For each bomb, it calculates the squared radius `riSquared` and checks if any other bomb lies within this range.
+* If another bomb is within range, it adds the index of the reachable bomb to the adjacency list `adjacencyList[i]`.
 
 ```cpp
 // Perform depth-first search (DFS) to count the number of detonated bombs
