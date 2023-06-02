@@ -85,6 +85,29 @@ int maximumDetonation(const vector<vector<int>>& bombs) {
 
 ```
 
+Now, let's break down the code and explain its logic step by step:
+
+1. The `dfs` function:
+   * This function performs a depth-first search (DFS) starting from a given bomb (denoted by index `i`).
+   * It takes three parameters: `i` (the current bomb index), `adjacencyList` (the adjacency list representation of connections between bombs), and `detonated` (a boolean vector indicating which bombs have been detonated).
+   * The function recursively explores the adjacency list for the current bomb, marking each bomb as detonated and counting the number of detonated bombs.
+   * It returns the count of detonated bombs.
+2. The `maximumDetonation` function:
+   * This function calculates the maximum number of bombs that can be detonated.
+   * It takes a 2D vector `bombs` as input, which represents the list of bombs.
+   * It initializes `maxDetonations` (the maximum number of detonated bombs) to 0 and `numBombs` to the size of the bomb list.
+   * It creates an adjacency list `adjacencyList` to represent the connections between bombs.
+3. Building the adjacency list:
+   * The code iterates through each bomb using the index `i`.
+   * For each bomb, it calculates the squared radius `riSquared` and checks if any other bomb lies within this range.
+   * If another bomb is within range, it adds the index of the reachable bomb to the adjacency list `adjacencyList[i]`.
+4. Finding the maximum number of detonations:
+   * The code performs a loop from `i = 0` to `numBombs-1` (the bomb indices).
+   * For each bomb index `i`, it initializes a boolean vector `detonated` of size `numBombs` to track the detonation status of bombs.
+   * It calls the `dfs` function with the current bomb index `i`, the adjacency list `adjacencyList`, and the `detonated` vector.
+   * The function returns the number of bombs detonated in the DFS traversal, and the code updates `maxDetonations` to the maximum between the current `maxDetonations` and the result of the `dfs` function.
+   * After iterating through all bombs, the code returns the maximum number of bombs that can be detonated (`maxDetonations`).
+
 The time complexity of the provided solution is O(N^3), where N is the number of bombs.
 
 1. Building the adjacency list: This step takes O(N^2) time because, for each bomb, we iterate through all other bombs to check if they lie within the range. This results in a total of N^2 comparisons.
