@@ -14,3 +14,4 @@
 * [Matrix in spiral order](matrix-in-spiral-order.md)
 * [Shortest Clear Path in a Binary Matrix](shortest-clear-path-in-a-binary-matrix.md)
 * [Maximum Bomb Detonation](maximum-bomb-detonation.md)
+* [Check if Points Form a Straight Line](check-if-points-form-a-straight-line.md)
