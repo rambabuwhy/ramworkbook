@@ -68,53 +68,34 @@ While the implementation is correct, we can optimize it further to achieve a lin
 
 ```cpp
 #include <iostream>
-#include <unordered_set>
+#include <algorithm>
 #include <vector>
+#include <unordered_set>
 
 bool canFormArithmeticProgression(std::vector<int>& arr) {
+    int minValue = *min_element(arr.begin(), arr.end());
+    int maxValue = *max_element(arr.begin(), arr.end());
     int n = arr.size();
-    if (n < 2) {
-        // An array with less than 2 elements is always considered an arithmetic progression
+    
+    if (maxValue - minValue == 0) {
         return true;
     }
-
-    // Find the minimum and maximum elements in the array
-    int minElement = arr[0];
-    int maxElement = arr[0];
-    for (int i = 1; i < n; i++) {
-        minElement = std::min(minElement, arr[i]);
-        maxElement = std::max(maxElement, arr[i]);
+    
+    if ((maxValue - minValue) % (n - 1) != 0) {
+        return false;
     }
-
-    // Calculate the common difference between consecutive elements
-    int diff = (maxElement - minElement) / (n - 1);
-
-    // Check if the difference between any two consecutive elements is the same
-    std::unordered_set<int> numSet(arr.begin(), arr.end());
+    
+    int diff = (maxValue - minValue) / (n - 1);
+    std::unordered_set<int> numberSet(arr.begin(), arr.end());
+    
     for (int i = 0; i < n; i++) {
-        int expectedNextElement = arr[i] + diff;
-        if (numSet.find(expectedNextElement) == numSet.end()) {
+        if (numberSet.find(minValue + diff * i) == numberSet.end()) {
             return false;
         }
     }
-
-    // If all differences are the same, it's an arithmetic progression
+    
     return true;
 }
-
-int main() {
-    // Example usage
-    std::vector<int> arr = {4, 2, 6, 8};  // can be rearranged to form an arithmetic progression: {2, 4, 6, 8}
-    bool result = canFormArithmeticProgression(arr);
-    if (result) {
-        std::cout << "The array can be rearranged to form an arithmetic progression.\n";
-    } else {
-        std::cout << "The array cannot be rearranged to form an arithmetic progression.\n";
-    }
-
-    return 0;
-}
-
 ```
 
 In the optimized version, we find the minimum and maximum elements in the array using a single pass. This allows us to calculate the common difference accurately. Then, we store all the elements of the array in an unordered set for efficient lookup.
