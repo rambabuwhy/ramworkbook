@@ -98,15 +98,13 @@ bool canFormArithmeticProgression(std::vector<int>& arr) {
 }
 ```
 
-In the optimized version, we find the minimum and maximum elements in the array using a single pass. This allows us to calculate the common difference accurately. Then, we store all the elements of the array in an unordered set for efficient lookup.
+In the optimized version, we find the minimum and maximum values in the array. We then check if the difference between the maximum and minimum values is zero, which indicates that all elements in the array are the same, making it an arithmetic progression. Next, we check if the difference between the maximum and minimum values is divisible by the length of the array minus one. If not, it's impossible to form an arithmetic progression.
 
-Next, we iterate over each element of the array and check if the expected next element (`arr[i] + diff`) exists in the set. If it doesn't, we return false immediately. Otherwise, we continue checking the remaining elements.
+If the above conditions are met, we calculate the common difference and create an unordered set with all the elements in the array. Finally, we iterate over the indices and check if the expected next element (calculated using `minValue + diff * i`) exists in the set. If any expected element is missing, we return false. Otherwise, we return true.
 
 The optimized version eliminates the need for sorting, resulting in a linear time complexity of O(n).
 
 Note:
-
-Let me explain the logic behind the line `int diff = (maxElement - minElement) / (n - 1)` in the optimized code.
 
 In an arithmetic progression, the difference between any two consecutive elements is constant. To determine this common difference, we can calculate the difference between the maximum and minimum elements in the array and divide it by the number of gaps between the elements.
 
