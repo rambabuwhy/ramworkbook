@@ -16,3 +16,4 @@
 * [Maximum Bomb Detonation](maximum-bomb-detonation.md)
 * [Check if Points Form a Straight Line](check-if-points-form-a-straight-line.md)
 * [Can form arithmetic Progression](can-form-arithmetic-progression.md)
+* [Minimum number of bit flips](minimum-number-of-bit-flips.md)
