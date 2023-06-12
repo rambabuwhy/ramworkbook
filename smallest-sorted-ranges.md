@@ -42,15 +42,17 @@ vector<string> summaryRanges(vector<int>& nums) {
         int start = nums[i];
         int end = start;
 
+        // Find the end of the consecutive range
         while (i + 1 < n && nums[i + 1] == nums[i] + 1) {
             end = nums[i + 1];
             i++;
         }
 
+        // Check if the range has only one element or multiple elements
         if (start == end) {
-            result.push_back(to_string(start));
+            result.push_back(to_string(start));  // Single element range
         } else {
-            result.push_back(to_string(start) + "->" + to_string(end));
+            result.push_back(to_string(start) + "->" + to_string(end));  // Multiple element range
         }
 
         i++;
@@ -62,14 +64,17 @@ vector<string> summaryRanges(vector<int>& nums) {
 int main() {
     vector<int> nums = {0, 1, 2, 4, 5, 7};
 
+    // Get the summary ranges
     vector<string> ranges = summaryRanges(nums);
 
+    // Print the ranges
     for (const string& range : ranges) {
         cout << range << " ";
     }
 
     return 0;
 }
+
 ```
 
 In this code, the `summaryRanges` function takes a sorted array `nums` as input and returns a vector of strings containing the smallest sorted list of ranges that cover all the numbers in `nums`. The `main` function demonstrates an example usage by creating an array `nums` and printing the resulting ranges.
