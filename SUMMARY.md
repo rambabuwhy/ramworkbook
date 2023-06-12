@@ -18,3 +18,4 @@
 * [Can form arithmetic Progression](can-form-arithmetic-progression.md)
 * [Minimum number of bit flips](minimum-number-of-bit-flips.md)
 * [Find the Smallest Character Greater than Target](find-the-smallest-character-greater-than-target.md)
+* [Smallest Sorted Ranges](smallest-sorted-ranges.md)
