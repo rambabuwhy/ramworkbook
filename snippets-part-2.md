@@ -177,7 +177,7 @@ vector<int> v_union;
 set_union(v1.begin(), v1.end(), v2.begin(), v2.end(), back_inserter(v_union)); // Compute the union of v1 and v2 and store the result in v_union
 ```
 
-14. `set_difference()`:
+14. set\_difference():
 
 Computes the difference of two sorted ranges.
 
@@ -192,7 +192,7 @@ vector<int> v_difference;
 set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), back_inserter(v_difference)); // Compute the difference of v1 and v2 and store the result in v_difference
 ```
 
-15. `nth_element()`:
+15. nth\_element():
 
 Rearranges the elements in a range such that the nth element is in its sorted position.
 
@@ -205,7 +205,7 @@ vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 5};
 nth_element(v.begin(), v.begin() + 4, v.end()); // Rearrange the elements in the v
 ```
 
-16. `find()`
+16. find():
 
 Returns the iterator to the first occurrence of a value in a range.
 
@@ -227,7 +227,7 @@ int main() {
 }
 ```
 
-17. `fill()`
+17. fill():
 
 Assigns a given value to all elements in a range.
 
@@ -252,7 +252,7 @@ int main() {
 }
 ```
 
-18. `copy()`
+18. copy():
 
 Copies elements from one range to another.
 
@@ -278,7 +278,7 @@ int main() {
 }
 ```
 
-19. `unique()`
+19. unique():
 
 Removes consecutive duplicate elements from a range.
 
@@ -304,7 +304,7 @@ int main() {
 }
 ```
 
-20. `distance()`
+20. &#x20;distance():
 
 Computes the distance between two iterators.
 
@@ -326,7 +326,7 @@ int main() {
 }
 ```
 
-21. `rotate()`&#x20;
+21. rotate():&#x20;
 
 Rotates the order of elements in a range by a specified number of positions.
 
@@ -351,7 +351,7 @@ int main() {
 }
 ```
 
-22. `partition()`
+22. &#x20;partition():
 
 Rearranges the elements in a range so that all elements that satisfy a predicate come before those that do not.
 
@@ -376,7 +376,7 @@ int main() {
 }
 ```
 
-23. `merge()`
+23. &#x20;merge():
 
 Merges two sorted ranges into a single sorted range.
 
@@ -403,7 +403,7 @@ int main() {
 }
 ```
 
-24. `minmax_element()`
+24. &#x20;minmax\_element():
 
 Returns a pair of iterators to the smallest and largest elements in a range.
 
@@ -425,7 +425,7 @@ int main() {
 }
 ```
 
-25. `clamp()`
+25. &#x20;clamp():
 
 Restricts a value to a specified range.
 
@@ -446,7 +446,7 @@ int main() {
 }
 ```
 
-26. `swap()`
+26. swap():
 
 Swaps the values of two objects.
 
@@ -469,7 +469,7 @@ int main() {
 }
 ```
 
-27. `shuffle()`
+27. shuffle():
 
 Randomly shuffles the elements in a range.
 
@@ -497,7 +497,7 @@ int main() {
 }
 ```
 
-28. `count()`
+28. &#x20;count():
 
 Counts the number of occurrences of a value in a range.
 
@@ -519,7 +519,7 @@ int main() {
 }
 ```
 
-29. `count_if()`
+29. &#x20;count\_if():
 
 Counts the number of elements in a range that satisfy a given condition.
 
@@ -541,7 +541,7 @@ int main() {
 }
 ```
 
-30. `all_of()`
+30. &#x20;all\_of():
 
 Returns true if all elements in a range satisfy a given condition.
 
