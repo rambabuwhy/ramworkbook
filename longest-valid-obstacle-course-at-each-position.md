@@ -1,5 +1,7 @@
 # Longest valid obstacle course at each position
 
+## Problem:
+
 Given an array `obstacles` of length `n`, where `obstacles[i]` represents the height of the i-th obstacle, you need to find the length of the longest obstacle course that satisfies the following conditions:
 
 * You can choose any number of obstacles between 0 and i, inclusive.
@@ -8,6 +10,8 @@ Given an array `obstacles` of length `n`, where `obstacles[i]` represents the he
 * Every obstacle (except the first) must be taller than or the same height as the obstacle immediately before it.
 
 Return an array `ans` of length `n`, where `ans[i]` represents the length of the longest obstacle course that can be built using obstacles up to position `i` in `obstacles`.
+
+## Solution:
 
 ```cpp
 class Solution {

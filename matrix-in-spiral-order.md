@@ -1,5 +1,7 @@
 # Matrix in spiral order
 
+## Problem:
+
 The code implements a function in C++ that takes a two-dimensional integer vector `matrix` as input, and returns a one-dimensional integer vector `result` that contains all elements of the input matrix traversed in a clockwise spiral order.
 
 &#x20;The input matrix can have any number of rows `m` and columns `n`. If the input matrix is empty, the function returns an empty `result` vector. The code uses four integer variables `top`, `bottom`, `left`, and `right` to keep track of the boundaries of the matrix, and iteratively traverses the matrix in a clockwise spiral order. At each step, the code appends the current element to the `result` vector, and updates the corresponding boundary variable to exclude the already traversed row or column. The algorithm terminates when all elements have been visited.
@@ -31,6 +33,8 @@ Visually, the traversal looks like this:
 ```
 
 The traversal starts at the top-left corner, and moves right until it hits the boundary. Then it moves down until it hits the boundary, and so on. The traversal continues until all elements have been appended to the `result` vector in the clockwise spiral order.
+
+## Solution:
 
 ```cpp
 #include <vector>

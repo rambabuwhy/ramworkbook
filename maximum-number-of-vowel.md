@@ -1,5 +1,7 @@
 # Maximum number of vowel
 
+## Problem:
+
 Given a string `s` and an integer `k`, find the maximum number of vowel letters in any substring of `s` with length `k`.
 
 A vowel letter in English is any one of 'a', 'e', 'i', 'o', or 'u'.
@@ -12,6 +14,8 @@ Write a function `maxVowels` that takes in two parameters:
 The function should return an integer representing the maximum number of vowel letters in any substring of `s` with length `k`.
 
 If there are multiple substrings with the same maximum number of vowels, return any one of them.
+
+## Solution:
 
 {% code lineNumbers="true" %}
 ```cpp

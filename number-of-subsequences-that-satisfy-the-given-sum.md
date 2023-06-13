@@ -1,5 +1,7 @@
 # Number of Subsequences that satisfy the given sum
 
+## Problem:
+
 You are given an array of integers `nums` and an integer `target`. Compute the number of non-empty subsequences of `nums` such that the sum of the minimum and maximum element in the subsequence is less than or equal to `target`. Return the result modulo 10^9 + 7.
 
 **Example**
@@ -9,6 +11,8 @@ Input: `nums = [3, 1, 2, 4], target = 6`
 Output: `7`
 
 Explanation: The valid subsequences are \[1], \[2], \[3], \[1, 2], \[1, 3], \[1, 2, 3], and \[2, 3].
+
+## Solution:
 
 {% code lineNumbers="true" %}
 ```cpp

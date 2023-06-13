@@ -1,5 +1,7 @@
 # Check if Points Form a Straight Line
 
+## Problem:
+
 You are given an array of 2D coordinates, `coordinates`, where `coordinates[i] = [x, y]` represents the coordinates of a point in the XY plane. Your task is to determine whether these points lie on a straight line.
 
 Write a function `bool checkStraightLine(vector<vector<int>>& coordinates)` that takes in the `coordinates` array and returns `true` if all the points lie on the same straight line, or `false` otherwise.
@@ -14,6 +16,8 @@ bool result = checkStraightLine(coordinates);
 **Output:**
 
 The function should return `true`, as all the points `(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)` lie on the same straight line.
+
+## Solution:
 
 The logic behind this approach is that if the cross product of the slopes between each point and the first point is zero, it indicates that all the slopes are equal, and the points lie on the same line. The cross product equality test is a more robust method to handle cases where the slopes involve integer division or potential precision errors with floating-point calculations.
 

@@ -1,5 +1,7 @@
 # Determine the sign
 
+## Problem:
+
 Determine the sign of the product of all elements in an integer array. To determine the sign of the product of all elements in an integer array. Specifically, given an array of integers `nums`, the function `arraySign` returns:
 
 * 1 if the product of all elements in `nums` is positive.
@@ -7,6 +9,8 @@ Determine the sign of the product of all elements in an integer array. To determ
 * 0 if the product of all elements in `nums` is equal to 0.
 
 In other words, the function `arraySign` determines whether the product of all elements in the array is positive, negative, or zero, without actually computing the product itself. Instead, it only considers the sign of each individual element in the array.
+
+## Solution:
 
 ```cpp
 int arraySign(vector<int>& nums) {

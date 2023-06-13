@@ -1,5 +1,7 @@
 # Maximum Bomb Detonation
 
+## Problem:
+
 You are given a list of bombs represented as a 0-indexed 2D integer array `bombs`. Each bomb is represented by three values: `[xi, yi, ri]`, where `xi` and `yi` denote the X and Y coordinates of the bomb's location, and `ri` denotes the radius of its range.
 
 A bomb's range is defined as the area where its effect can be felt, which is in the shape of a circle centered at the bomb's location.
@@ -16,6 +18,8 @@ Output: 2
 ```
 
 
+
+## Solution:
 
 By using DFS and an adjacency list, the code effectively explores the connections between bombs to determine the maximum number of bombs that can be detonated.
 

@@ -1,5 +1,7 @@
 # Minimum number of bit flips
 
+## Problem:
+
 You are given three positive numbers, `a`, `b`, and `c`. Your task is to write a function that calculates the minimum number of bit flips required in `a` and `b` to make the bitwise OR of `a` and `b` equal to `c`.
 
 A flip operation consists of changing any single bit from 1 to 0 or from 0 to 1 in the binary representation of a number.
@@ -19,6 +21,8 @@ Note:
 * In Example 1, the binary representation of `2` is `10`, `6` is `110`, and `5` is `101`. By flipping the bits in `a` and `b`, we can obtain `1` (`01`) and `4` (`100`) respectively, such that `(1 | 4) == 5`.
 * In Example 2, the binary representation of `4` is `100`, `2` is `010`, and `7` is `111`. By flipping the bit in `a`, we can obtain `4` (`100`) and `2` (`010`) such that `(4 | 2) == 7`.
 * In Example 3, the binary representation of `1` is `001`, `2` is `010`, and `3` is `011`. As `(1 | 2) == 3`, no bit flips are required.
+
+## Solution:
 
 ```cpp
 #include <iostream>

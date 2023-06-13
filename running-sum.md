@@ -1,8 +1,12 @@
 # Running Sum
 
+## Problem:
+
 Given an array `nums`, calculate the running sum of `nums`, where `runningSum[i]` is the sum of the first `i+1` elements of `nums`.
 
 The output shows that the running sum of the input array `{1, 2, 3, 4, 5}` is `{1, 3, 6, 10, 15}`, which is the sum of the first i+1 elements of the input array.
+
+## Solution:
 
 An optimized code that can calculate the running sum of an array in linear time complexity, O(n), where n is the size of the array. This code avoids creating an extra vector and does the calculation in-place, using only the input array. Here's the C++ code for the optimized solution
 

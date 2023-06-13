@@ -1,5 +1,7 @@
 # Shortest Clear Path in a Binary Matrix
 
+## Problem:
+
 You are given an `n x n` binary matrix `grid`, where each cell of the matrix can be either 0 or 1. The matrix represents a grid where 0 denotes a clear cell and 1 denotes a blocked cell. Your task is to find the length of the shortest clear path from the top-left cell (0, 0) to the bottom-right cell (n - 1, n - 1), subject to the following conditions:
 
 1. A clear path is a path consisting of only clear cells (0) that starts at the top-left cell and ends at the bottom-right cell.
@@ -61,6 +63,8 @@ Output:
 ```
 
 Explanation: In this case, there is no clear path from the top-left cell to the bottom-right cell because the start cell (0, 0) is blocked.
+
+## Solution:
 
 ```cpp
 #include <iostream>

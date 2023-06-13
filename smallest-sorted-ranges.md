@@ -1,5 +1,7 @@
 # Smallest Sorted Ranges
 
+## Problem:&#x20;
+
 Given a sorted array of unique integers, `nums`, the task is to find the smallest possible list of ranges that covers all the numbers in the array exactly. Each element in `nums` should be covered by exactly one range, and no other integers should be included in the ranges.
 
 Write a function `findSmallestRanges` in C++ that takes an input array `nums` and returns a vector of strings representing the smallest sorted list of ranges.
@@ -23,6 +25,8 @@ vector<string> ranges = findSmallestRanges(nums);
 ```
 
 In the given example, the input array `nums` contains the elements {0, 1, 2, 4, 5, 7}. The smallest list of ranges that cover all these numbers exactly is {"0->2", "4->5", "7"}.
+
+## Solution:
 
 To solve this problem in C++, you can iterate through the sorted array `nums` and merge consecutive elements to form ranges. Here's an implementation that achieves this:
 

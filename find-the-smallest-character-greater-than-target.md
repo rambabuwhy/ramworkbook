@@ -1,5 +1,7 @@
 # Find the Smallest Character Greater than Target
 
+## Problem:
+
 Given a sorted array of characters, `letters`, in non-decreasing order, and a character `target`, find the smallest character in `letters` that is lexicographically greater than `target`. If there is no character in `letters` that is greater than `target`, return the first character in `letters`.
 
 **Function Signature:**
@@ -16,6 +18,8 @@ char nextGreatestLetter(std::vector<char>& letters, char target);
 **Output:**
 
 * Returns a character (`char`) representing the smallest character in `letters` that is lexicographically greater than `target`, or the first character in `letters` if no such character exists.
+
+## Solution:
 
 To solve the problem, you can use a simple linear search algorithm. Since the array is already sorted in non-decreasing order, you can iterate over the array and find the smallest character that is greater than the target.
 

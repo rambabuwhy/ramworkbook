@@ -1,8 +1,12 @@
 # Missing number finder
 
+## Problem:
+
 Given two 0-indexed integer arrays `nums1` and `nums2`, find all the distinct integers that are present in `nums1` but not in `nums2`, and all the distinct integers that are present in `nums2` but not in `nums1`.
 
 Return a vector `answer` of size 2, where `answer[0]` is a vector of all the distinct integers in `nums1` that are not present in `nums2`, and `answer[1]` is a vector of all the distinct integers in `nums2` that are not present in `nums1`.
+
+## Solution:
 
 ```cpp
 #include <vector>

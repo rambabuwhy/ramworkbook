@@ -1,6 +1,6 @@
 # Snippets-part 2
 
-1. `sort()`:
+1. sort():
 
 Sorts a range of elements in ascending or descending order.
 
@@ -13,7 +13,7 @@ vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 5};
 sort(v.begin(), v.end()); // Sort the vector in ascending order
 ```
 
-2. `reverse()`:
+2. reverse():
 
 Reverses the order of elements in a range.
 
@@ -26,7 +26,7 @@ vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 5};
 reverse(v.begin(), v.end()); // Reverse the order of elements in the vector
 ```
 
-3. `min_element()`:
+3. min\_element():
 
 Returns an iterator to the smallest element in a range.
 
@@ -39,7 +39,7 @@ vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 5};
 auto smallest = min_element(v.begin(), v.end()); // Find the smallest element in the vector
 ```
 
-4. `max_element()`:
+4. max\_element():
 
 Returns an iterator to the largest element in a range.
 
@@ -52,7 +52,7 @@ vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 5};
 auto largest = max_element(v.begin(), v.end()); // Find the largest element in the vector
 ```
 
-5. `count()`:
+5. count():
 
 Returns the number of occurrences of a value in a range.
 
@@ -65,7 +65,7 @@ vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 5};
 int count_of_5 = count(v.begin(), v.end(), 5); // Count the number of occurrences of 5 in the vector
 ```
 
-6. `accumulate()`:
+6. accumulate():
 
 Returns the sum of all elements in a range.
 
@@ -78,7 +78,7 @@ vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 5};
 int sum = accumulate(v.begin(), v.end(), 0); // Compute the sum of elements in the vector
 ```
 
-7. `next_permutation()`:
+7. next\_permutation():
 
 Rearranges the elements in a range into the next lexicographically greater permutation.
 
@@ -93,7 +93,7 @@ do {
 } while (next_permutation(v.begin(), v.end())); // Iterate over all permutations of the vector
 ```
 
-8. `prev_permutation()`:
+8. prev\_permutation():
 
 Rearranges the elements in a range into the next lexicographically smaller permutation.
 
@@ -108,7 +108,7 @@ do {
 } while (prev_permutation(v.begin(), v.end())); // Iterate over all permutations of the vector in reverse order
 ```
 
-9. `binary_search()`:
+9. binary\_search():
 
 Determines whether a value exists in a sorted range.
 
@@ -121,7 +121,7 @@ vector<int> v = {1, 3, 4, 5, 7, 9};
 bool found = binary_search(v.begin(), v.end(), 4); // Check if 4 exists in the vector
 ```
 
-10. `lower_bound()`:
+10. lower\_bound():
 
 Finds the iterator to the first element in a sorted range that is greater than or equal to a given value.
 
@@ -134,7 +134,7 @@ vector<int> v = {1, 3, 4, 5, 7, 9};
 auto it = lower_bound(v.begin(), v.end(), 6); // Find the first element in the vector that is greater than or equal to 6
 ```
 
-11. `upper_bound()`:
+11. upper\_bound():
 
 Finds the iterator to the first element in a sorted range that is greater than a given value.
 
@@ -147,7 +147,7 @@ vector<int> v = {1, 3, 4, 5, 7, 9};
 auto it = upper_bound(v.begin(), v.end(), 6); // Find the first element in the vector that is greater than 6
 ```
 
-12. `set_intersection()`:
+12. set\_intersection():
 
 Computes the intersection of two sorted ranges.
 
@@ -162,7 +162,7 @@ vector<int> v_intersection;
 set_intersection(v1.begin(), v1.end(), v2.begin(), v2.end(), back_inserter(v_intersection)); // Compute the intersection of v1 and v2 and store the result in v_intersection
 ```
 
-13. `set_union()`:
+13. set\_union():
 
 Computes the union of two sorted ranges.
 

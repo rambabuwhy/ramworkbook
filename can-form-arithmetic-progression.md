@@ -1,5 +1,7 @@
 # Can form arithmetic Progression
 
+## Problem:
+
 Given an array of numbers `arr`, determine if it is possible to rearrange the elements of the array to form an arithmetic progression. An arithmetic progression is a sequence of numbers in which the difference between any two consecutive elements is the same. Return `true` if such a rearrangement is possible; otherwise, return `false`.
 
 Function Signature:
@@ -15,6 +17,8 @@ Input:
 Output:
 
 * The function should return a boolean value indicating whether it is possible to rearrange the elements of the array to form an arithmetic progression.
+
+## Solution:
 
 Here's an example implementation in C++ that checks if an array can be rearranged to form an arithmetic progression:
 

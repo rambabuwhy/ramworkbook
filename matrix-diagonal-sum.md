@@ -1,5 +1,7 @@
 # Matrix Diagonal Sum
 
+## Problem:
+
 Given a square matrix `mat`, return the sum of the matrix diagonals.
 
 The matrix diagonals are defined as follows:
@@ -23,6 +25,8 @@ Explanation: The matrix diagonals are:
 * Primary diagonal: \[1, 5, 9]
 * Secondary diagonal: \[3, 5, 7] The sum of all elements on the primary and secondary diagonals that are not part of the primary diagonal is 1 + 3 + 7 + 9 = 20, and the sum of all elements on the primary diagonal is 1 + 5 + 9 = 15. The total sum is 20 + 15 = 25.
 {% endhint %}
+
+## Solution:
 
 Here's an example implementation in C++:
 
