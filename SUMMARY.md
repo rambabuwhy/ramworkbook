@@ -22,3 +22,4 @@
 * [Counting Equal Row-Column Pairs in a Matrix](counting-equal-row-column-pairs-in-a-matrix.md)
 * [Minimum Absolute Difference in a Binary Search Tree](minimum-absolute-difference-in-a-binary-search-tree.md)
 * [Counting Increasing Paths in a Grid](counting-increasing-paths-in-a-grid.md)
+* [Maximum probability of successfully reaching the ending node](maximum-probability-of-successfully-reaching-the-ending-node.md)
