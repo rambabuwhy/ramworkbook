@@ -27,23 +27,28 @@ You can solve this problem using a recursive approach to generate all possible c
 #include <iostream>
 #include <vector>
 
+// Recursive function to generate combinations
 void backtrack(int start, int n, int k, std::vector<int>& current, std::vector<std::vector<int>>& result) {
+    // Base case: If current combination size is k, add it to the result
     if (current.size() == k) {
         result.push_back(current);
         return;
     }
 
+    // Explore all candidates from 'start' to 'n'
     for (int i = start; i <= n; ++i) {
-        current.push_back(i);
+        current.push_back(i);  // Add current candidate to the combination
+        // Recursively move to the next candidate (i+1)
         backtrack(i + 1, n, k, current, result);
-        current.pop_back();
+        current.pop_back();    // Backtrack: Remove last candidate for next iteration
     }
 }
 
+// Function to generate all combinations of k numbers from [1, n]
 std::vector<std::vector<int>> combine(int n, int k) {
-    std::vector<std::vector<int>> result;
-    std::vector<int> current;
-    backtrack(1, n, k, current, result);
+    std::vector<std::vector<int>> result; // Store the final combinations
+    std::vector<int> current; // Current combination being generated
+    backtrack(1, n, k, current, result); // Start recursion with initial parameters
     return result;
 }
 
@@ -51,8 +56,10 @@ int main() {
     int n = 4; // Change these values as needed
     int k = 2;
     
+    // Generate combinations
     std::vector<std::vector<int>> combinations = combine(n, k);
 
+    // Print the generated combinations
     std::cout << "Combinations of " << k << " numbers chosen from [1, " << n << "]:\n";
     for (const auto& combination : combinations) {
         for (int num : combination) {
@@ -63,6 +70,7 @@ int main() {
 
     return 0;
 }
+
 ```
 
 You can modify the values of `n` and `k` in the `main()` function to get combinations for different inputs. The `combine` function generates the combinations using backtracking and returns a vector of vectors representing the combinations.
