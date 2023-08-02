@@ -7,6 +7,7 @@
 * [Running Sum](running-sum.md)
 * [Determine the sign](determine-the-sign.md)
 * [Maximum number of vowel](maximum-number-of-vowel.md)
+* [Generating Combinations](generating-combinations.md)
 * [Number of Subsequences that satisfy the given sum](number-of-subsequences-that-satisfy-the-given-sum.md)
 * [Missing number finder](missing-number-finder.md)
 * [Longest valid obstacle course at each position](longest-valid-obstacle-course-at-each-position.md)
