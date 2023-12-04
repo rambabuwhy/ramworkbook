@@ -24,3 +24,4 @@
 * [Minimum Absolute Difference in a Binary Search Tree](minimum-absolute-difference-in-a-binary-search-tree.md)
 * [Counting Increasing Paths in a Grid](counting-increasing-paths-in-a-grid.md)
 * [Maximum probability of successfully reaching the ending node](maximum-probability-of-successfully-reaching-the-ending-node.md)
+* [Largest Good Integer: Largest 3-Same-Digit Number in String](largest-good-integer-largest-3-same-digit-number-in-string.md)
